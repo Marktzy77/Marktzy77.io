@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Saint Joseph College</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #99A3A4;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #99A3A4;
+            padding: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo {
+            max-width: 150px;
+            margin-right: 20px;
+        }
+
+        .header-title {
+            text-align: center;
+        }
+
+        nav {
+            background-color: #5d6d7e;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            background-color: #000000;
+        }
+
+        
+        .burger {
+            display: none;
+            cursor: pointer;
+            font-size: 24px;
+        }
+
+        
+        .menu {
+            display: flex;
+            justify-content: center;
+        }
+
+        
+        @media screen and (max-width: 768px) {
+            .menu {
+                display: none; /* Hide the menu */
+                flex-direction: column;
+                justify-content: flex-start;
+            }
+
+            nav {
+                position: relative;
+            }
+
+            .burger {
+                display: block; 
+            }
+
+            
+            .menu.active {
+                display: flex;
+                position: absolute;
+                top: 50px;
+                left: 0;
+                right: 0;
+                background-color: #FFFFFF;
+            }
+
+            nav a {
+                padding: 14px;
+                display: block;
+                text-align: center;
+            }
+        }
+
+        .content {
+            margin-top: 50px;
+        }
+
+        .content p {
+            font-size: 18px;
+        }
+
+        footer {
+            background-color: #99A3A4;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="sjc.png" alt="Saint Joseph College Logo" class="logo">
+        <div class="header-title">
+            <h1>Saint Joseph College</h1>
+            <h4>God, Country, Knowledge</h4>
+        </div>
+    </header>
+
+    <nav>
+        <div class="burger" onclick="toggleMenu()">☰</div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <h1>About Us</h1>
+        <p>Saint Joseph College in Maasin City, Philippines, is a prominent private Catholic educational institution
+            founded in 1958. Operated by the Congregation of the Religious of the Virgin Mary (RVM), the college has a
+            long-standing commitment to providing quality education rooted in Christian values.</p>
+        <!-- Add more content here -->
+    </div>
+
+    <footer>
+        <p>Created By AexusDev</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>

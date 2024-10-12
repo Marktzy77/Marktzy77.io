@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saint Joseph College</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #99A3A4;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #99A3A4;
+            padding: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .logo {
+            max-width: 150px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2em;
+            color: #000;
+        }
+
+        h4 {
+            margin: 5px 0;
+            font-weight: normal;
+            color: #333;
+        }
+
+        nav {
+            background-color: #000000;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            background-color: #008000;
+        }
+
+        .burger {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: white;
+            position: absolute;
+            top: 15px;
+            left: 15px;
+        }
+
+        .burger:hover {
+            background-color: #008000;
+            padding: 0px 5px;
+            border-radius: 5px;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu a {
+            display: block;
+            padding: 10px;
+            color: white;
+        }
+
+        .menu.active {
+            display: block;
+        }
+
+        .menu a:hover {
+            background-color: #555;
+        }
+
+        .content {
+            margin-top: 50px;
+            padding: 20px;
+            text-align: left;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        footer {
+            background-color: #99A3A4;
+            padding: 10px;
+            position: relative;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            nav a {
+                display: none;
+            }
+
+            .burger {
+                display: block;
+            }
+
+            .menu {
+                display: none;
+                flex-direction: column;
+                background-color: #000;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="sjc.png" alt="Saint Joseph College Logo" class="logo">
+        <h1>Saint Joseph College</h1>
+        <h4>God, Country, Knowledge</h4>
+    </header>
+
+    <nav>
+        <span class="burger" onclick="toggleMenu()">&#9776;</span>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <div class="welcome">
+            <h2>Welcome to Saint Joseph College</h2>
+            <p>At Saint Joseph College, we are dedicated to providing a holistic education that nurtures both the mind and spirit. Join us in a community where you can thrive academically and personally.</p>
+        </div>
+
+        <div class="quick-links">
+            <h3>Quick Links</h3>
+            <a href="admissions.html">Admissions</a>
+            <a href="events.html">Events</a>
+            <a href="news.html">News</a>
+        </div>
+
+        <div class="news">
+            <h3>Latest News</h3>
+            <p><strong>New Programs Offered:</strong> Exciting new courses in environmental science and digital marketing starting this semester!</p>
+            <p><strong>Upcoming Events:</strong> Join us for the annual college fair on October 15th!</p>
+        </div>
+
+        <div class="testimonials">
+            <h3>What Our Students Say</h3>
+            <blockquote>
+                <p>"Saint Joseph College has been a life-changing experience for me. The supportive community and excellent faculty helped me grow!" - Student Name</p>
+            </blockquote>
+        </div>
+        <h2>History of Saint Joseph College</h2>
+        <p>Saint Joseph College was founded on February 20, 1928, by His Excellency Most Reverend Sofronio G. Hacbang, D.D. (1887-1937), Bishop of Calbayog Diocese. Originally named Instituto de San Jose, its primary purpose was to provide Catholic education to fulfill the Church's mission of evangelization. In June 1928, the school welcomed its first students in a provisional building. Recognition from the government came two years later for its elementary and secondary courses.</p>
+        <p>The leadership was entrusted to diocesan priests, with the first School Director being Reverend Father Sofio Mandia.</p>
+
+        <h2>Academic Programs</h2>
+        <p>Saint Joseph College offers a diverse range of programs:</p>
+        <ul>
+            <li><strong>Education:</strong> Focused on training effective and compassionate educators.</li>
+            <li><strong>Business Administration:</strong> Equipping students with essential skills in management and entrepreneurship.</li>
+            <li><strong>Information Technology:</strong> Developing proficiency in computing and information systems.</li>
+            <li><strong>Other Fields:</strong> Programs in arts, sciences, and hospitality management.</li>
+        </ul>
+
+        <h2>Mission and Values</h2>
+        <p>The mission of Saint Joseph College is to foster holistic education that integrates academic excellence with spiritual formation. The college emphasizes the development of the whole person, encouraging students to grow intellectually, emotionally, and spiritually. Core values include:</p>
+        <ul>
+            <li><strong>Community Service:</strong> Students engage in outreach programs, promoting social responsibility.</li>
+            <li><strong>Leadership:</strong> Cultivating future leaders who are ethical and dedicated to making a positive impact.</li>
+            <li><strong>Spiritual Growth:</strong> Prioritizing spiritual development rooted in Catholic teachings.</li>
+        </ul>
+
+        <h2>Campus Life</h2>
+        <p>The campus is equipped with modern facilities that support both academic and extracurricular activities:</p>
+        <ul>
+            <li><strong>Classrooms and Laboratories:</strong> State-of-the-art learning spaces.</li>
+            <li><strong>Library:</strong> A well-resourced library for research and study.</li>
+            <li><strong>Recreational Areas:</strong> Facilities for sports and extracurricular activities.</li>
+            <li><strong>Spiritual Centers:</strong> Spaces for reflection and spiritual activities.</li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 All Rights Reserved</p>
+        <p>Created By AexusDev</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+
+</body>
+
+</html>
